@@ -1,0 +1,6 @@
+Iniciando o servidor
+
+# gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker
+
+-w = Quantos workers dos servidores ewu quero que ele inicie. Vão ter 4 servidores servindo a minha aplicação, fazendo assim o balanceamento de carga
+-k = Define o a classe que eu quero executar com alto desempenho

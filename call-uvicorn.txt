@@ -1,0 +1,3 @@
+Iniciando o servidor
+
+uvicorn main:app --reload

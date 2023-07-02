@@ -1,10 +1,26 @@
+from typing import Any, Optional
+
 from fastapi import FastAPI
 from fastapi import HTTPException
 from fastapi import status
 from fastapi.responses import JSONResponse # esse aqui é obrigatprio passar um content, no método delete não serve
 from fastapi import Response
+from fastapi import Path  # serve para ajustar a doc e colocar validadores
+from fastapi import Query
+from fastapi import Header
+from fastapi import Depends
+
+from time import sleep
 
 from models import Curso
+
+def fake_db():
+    try:
+        print('Abrindo conexão com banco de dados')
+        sleep(1)
+    finally:
+        print('Fechando conexão com banco de dados')
+        sleep(1)
 
 app = FastAPI()
 
@@ -22,11 +38,11 @@ cursos = {
 }
 
 @app.get('/cursos')
-async def get_cursos():
+async def get_cursos(db:Any = Depends(fake_db)):
     return cursos
 
 @app.get('/cursos/{curso_id}')
-async def get_cursos(curso_id : int):  # ele trasforma para o tipo inteiro através do type hint
+async def get_cursos(curso_id : int = Path(title='ID do curso',description='Deve ser entre 1 e 2',gt=0,lt=3), db:Any = Depends(fake_db)):  # ele trasforma para o tipo inteiro através do type hint
     # tratando as exceções caso não exista o curso
     try:
         curso = cursos[curso_id]
@@ -38,14 +54,14 @@ async def get_cursos(curso_id : int):  # ele trasforma para o tipo inteiro atrav
         )
 
 @app.post('/cursos', status_code=status.HTTP_201_CREATED)
-async def post_curso(curso:Curso):
+async def post_curso(curso:Curso, db:Any = Depends(fake_db)):
     next_id: int = len(cursos) + 1
     cursos[next_id] = curso
     del curso.id
     return curso
 
 @app.put('/cursos/{curso_id}')
-async def put_curso(curso_id:int, curso:Curso):
+async def put_curso(curso_id:int, curso:Curso, db:Any = Depends(fake_db)):
     if curso_id in cursos:
         cursos[curso_id] = curso
         del curso.id
@@ -57,7 +73,7 @@ async def put_curso(curso_id:int, curso:Curso):
         )
 
 @app.delete('/cursos/{curso_id}')
-async def delete_curso(curso_id: int):
+async def delete_curso(curso_id:int, db:Any = Depends(fake_db)):
     if curso_id in cursos:
         del cursos[curso_id]
         return Response(
@@ -68,7 +84,15 @@ async def delete_curso(curso_id: int):
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f'Não existe um curso com ID {curso_id}'
         )
-    
+
+@app.get('/calculadora')
+async def calcular(a:int = Query(gt=5), b:int = Query(gt=10), c:Optional[int] = None, x_geek: str = Header()):
+    # deixa o c como opcional
+    soma: int = a + b
+    if c:
+        soma += c
+    print(f'X-GEEK: {x_geek}')
+    return {'resultado': soma}
 
 if __name__ == '__main__':
     import uvicorn
@@ -78,6 +102,5 @@ if __name__ == '__main__':
         host='127.0.0.1',
         port=8000,
         reload=True,
-        debug=True
-        
+        use_colors=True
     )

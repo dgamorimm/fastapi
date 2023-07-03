@@ -3,6 +3,9 @@
 from os import getenv
 from pydantic import BaseSettings
 from sqlalchemy.ext.declarative import declarative_base
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class Settings(BaseSettings):
     """

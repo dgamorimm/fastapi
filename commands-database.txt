@@ -1,0 +1,24 @@
+# Iniciar , restartar, verificar o status de um serviço
+sudo service postgresql status
+sudo service postgresql restart
+
+# Entrar no CLI
+sudo -u postgres psql
+
+# Criar um banco de dados
+CREATE DATABASE faculdade OWNER dgamorim;
+
+# Deletar um banco
+DROP DATABASE faculdade;
+
+# Conceder acesso full ao banco
+GRANT ALL PRIVILEGES ON DATABASE faculdade TO dgamorim;
+
+# Alterar senha de um usuário
+\password dgamorim
+
+#Listar os bancos
+\l
+
+# Sair do CLI
+\q

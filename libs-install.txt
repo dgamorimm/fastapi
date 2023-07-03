@@ -1,1 +1,1 @@
-pip3 install fastapi uvicorn gunicorn psycopg2-binary sqlalchemy asyncpg uvicorn
+pip3 install fastapi uvicorn gunicorn psycopg2-binary sqlalchemy asyncpg uvicorn python-dotenv[cli]

@@ -1,1 +1,1 @@
-pip3 install fastapi uvicorn gunicorn psycopg2-binary sqlalchemy asyncpg uvicorn python-dotenv[cli] sqlmodel
+pip3 install fastapi uvicorn gunicorn psycopg2-binary sqlalchemy asyncpg uvicorn python-dotenv[cli] sqlmodel python-jose[cryptography] pytz passlib python-multipart

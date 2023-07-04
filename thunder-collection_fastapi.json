@@ -1,0 +1,656 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "fastapi",
+    "dateExported": "2023-07-04T02:18:52.893Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "baa36b65-f803-491f-89b5-c536354020cc",
+            "name": "secao-02",
+            "containerId": "",
+            "created": "2023-07-01T16:43:52.885Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "0da3e237-dbde-46fb-9284-b8accdaf9edd",
+            "name": "secao-03",
+            "containerId": "",
+            "created": "2023-07-01T17:10:50.113Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "95868b7f-faa9-4ba1-8091-371b0961975a",
+            "name": "secao-03-p2",
+            "containerId": "",
+            "created": "2023-07-02T16:27:35.998Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "b688851e-a8e8-461f-99c0-7147907d0526",
+            "name": "secao-04",
+            "containerId": "",
+            "created": "2023-07-03T16:22:41.362Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "85d791d4-c95a-4704-a284-b28a6bf4a7b2",
+            "name": "secao-05",
+            "containerId": "",
+            "created": "2023-07-03T20:38:42.709Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "e0a082f6-d614-4bf0-9ef9-c6dbacf22152",
+            "name": "secao06",
+            "containerId": "",
+            "created": "2023-07-04T01:31:32.663Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Usuarios",
+            "containerId": "e0a082f6-d614-4bf0-9ef9-c6dbacf22152",
+            "created": "2023-07-04T01:55:57.266Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "4e08b6eb-eead-49e9-860b-66205e705fd1",
+            "name": "Artigos",
+            "containerId": "e0a082f6-d614-4bf0-9ef9-c6dbacf22152",
+            "created": "2023-07-04T01:56:14.507Z",
+            "sortNum": 80000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3ae707c3-0171-4e5f-a108-25f96b166527",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "baa36b65-f803-491f-89b5-c536354020cc",
+            "name": "Raiz",
+            "url": "http://127.0.0.1:8000/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-01T16:44:17.498Z",
+            "modified": "2023-07-01T16:50:13.363Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dbb50367-fbfe-43d1-902d-711b791fbc1a",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Usuario",
+            "url": "http://localhost:8000/api/v1/usuarios/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-04T01:31:48.078Z",
+            "modified": "2023-07-04T01:39:55.914Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\" : \"Elisangela\",\n  \"sobrenome\" : \"Quintanilha\",\n  \"email\" : \"elisangela@hotmail.com\",\n  \"senha\" : \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5f879932-1506-4547-980b-5b475b0d50cc",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "0da3e237-dbde-46fb-9284-b8accdaf9edd",
+            "name": "Cursos",
+            "url": "http://127.0.0.1:8000/cursos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-01T17:10:59.560Z",
+            "modified": "2023-07-01T18:37:18.789Z",
+            "headers": [
+                {
+                    "name": "x-geek",
+                    "value": "University"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7231d1f7-4d2a-47b8-91c1-a83406514ff4",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "95868b7f-faa9-4ba1-8091-371b0961975a",
+            "name": "Cursos",
+            "url": "http://127.0.0.1:8000/api/v1/cursos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-02T16:27:35.998Z",
+            "modified": "2023-07-02T16:28:30.449Z",
+            "headers": [
+                {
+                    "name": "x-geek",
+                    "value": "University"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5dca6f10-ec2e-407a-84be-95657f5b6a84",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Login",
+            "url": "http://localhost:8000/api/v1/usuarios/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-04T01:46:56.813Z",
+            "modified": "2023-07-04T02:10:27.215Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "vitoria@outlook.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3403bd61-d8e6-4ecc-a57f-40bd78b20ca2",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "0da3e237-dbde-46fb-9284-b8accdaf9edd",
+            "name": "Curso",
+            "url": "http://127.0.0.1:8000/cursos/3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-01T17:15:42.698Z",
+            "modified": "2023-07-01T18:13:45.245Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b35f54eb-cd21-420e-b172-64aec1218ec7",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "95868b7f-faa9-4ba1-8091-371b0961975a",
+            "name": "Usuários",
+            "url": "http://127.0.0.1:8000/api/v1/usuarios",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-02T16:28:09.222Z",
+            "modified": "2023-07-02T16:28:38.635Z",
+            "headers": [
+                {
+                    "name": "x-geek",
+                    "value": "University"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6bbd3a08-e855-48cb-aacb-316ee6875371",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Usuarios",
+            "url": "http://localhost:8000/api/v1/usuarios",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-04T01:40:33.305Z",
+            "modified": "2023-07-04T01:40:46.586Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c9868b60-7d9b-41b2-968a-e252649f8fe5",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "0da3e237-dbde-46fb-9284-b8accdaf9edd",
+            "name": "Curso",
+            "url": "http://127.0.0.1:8000/cursos",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-01T17:31:26.044Z",
+            "modified": "2023-07-01T17:51:53.065Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\":\"Programação em Java\",\n  \"aulas\" : 47,\n  \"horas\" : 52\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "23fde98a-217a-4bc8-be0c-b87cf5fae280",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Logado",
+            "url": "http://localhost:8000/api/v1/usuarios/logado",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-04T01:52:18.773Z",
+            "modified": "2023-07-04T01:54:55.080Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNjg5MDQwMTAzLCJpYXQiOjE2ODg0MzUzMDMsInN1YiI6IjEifQ.h1x_FVhS8ZDExKPKkLn9FzVdqg369c87KCEraG9PiXo"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e3819937-0c1a-437c-82c8-6a0597356f99",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "0da3e237-dbde-46fb-9284-b8accdaf9edd",
+            "name": "Curso",
+            "url": "http://127.0.0.1:8000/cursos/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-07-01T17:49:52.236Z",
+            "modified": "2023-07-01T17:50:22.571Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\":\"Programação em C\",\n  \"aulas\" : 47,\n  \"horas\" : 52\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "344e9c37-2c00-4b4c-bb19-1ad708ae501d",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Usuario",
+            "url": "http://localhost:8000/api/v1/usuarios/1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-07-04T01:43:21.737Z",
+            "modified": "2023-07-04T02:02:12.360Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d853719b-b36f-4535-928e-cf4979cb7663",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "0da3e237-dbde-46fb-9284-b8accdaf9edd",
+            "name": "Curso",
+            "url": "http://127.0.0.1:8000/cursos/2",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-07-01T17:56:26.129Z",
+            "modified": "2023-07-01T17:56:54.612Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "711fd003-0d6f-401f-96f2-1d8c9e5cce6a",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Usuario",
+            "url": "http://localhost:8000/api/v1/usuarios/3",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-07-04T01:46:04.501Z",
+            "modified": "2023-07-04T01:46:04.501Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"sobrenome\": \"Quintanilha\",\n  \"is_admin\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7c20bc77-84fb-432b-96b4-f2f4bdb01a70",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "0da3e237-dbde-46fb-9284-b8accdaf9edd",
+            "name": "Calculadora",
+            "url": "http://127.0.0.1:8000/calculadora?a=6&b=12&c=3",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-07-01T18:21:41.650Z",
+            "modified": "2023-07-01T18:38:25.317Z",
+            "headers": [
+                {
+                    "name": "x-geek",
+                    "value": "University"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "a",
+                    "value": "6",
+                    "isPath": false
+                },
+                {
+                    "name": "b",
+                    "value": "12",
+                    "isPath": false
+                },
+                {
+                    "name": "c",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "cd0be045-4257-40b6-a6d3-aaf3ed711795",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "5f217e95-6fa1-4d9b-a1aa-1337012e1009",
+            "name": "Usuario",
+            "url": "http://localhost:8000/api/v1/usuarios/3",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-07-04T01:41:42.399Z",
+            "modified": "2023-07-04T01:46:22.024Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7ef8be1d-ccc0-4007-933a-2e088a1f79b1",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "b688851e-a8e8-461f-99c0-7147907d0526",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-07-03T16:22:50.246Z",
+            "modified": "2023-07-03T16:35:02.112Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\" : \"Programação em Sql Alchemy\",\n  \"aulas\" : 38,\n  \"horas\" : 20\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4c6d147-8f3f-46f9-9da5-0c62c27319fb",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "85d791d4-c95a-4704-a284-b28a6bf4a7b2",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-07-03T20:38:42.709Z",
+            "modified": "2023-07-03T20:39:20.224Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\" : \"Programação em Python\",\n  \"aulas\" : 38,\n  \"horas\" : 20\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "21a290e6-90e4-4f92-b6d7-d59448ba98bb",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "b688851e-a8e8-461f-99c0-7147907d0526",
+            "name": "Cursos",
+            "url": "http://localhost:8000/api/v1/cursos",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-07-03T16:31:39.842Z",
+            "modified": "2023-07-03T16:31:54.475Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0c67419c-9402-46a9-8ce3-0fd06ad1633d",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "85d791d4-c95a-4704-a284-b28a6bf4a7b2",
+            "name": "Cursos",
+            "url": "http://localhost:8000/api/v1/cursos",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-07-03T20:38:42.710Z",
+            "modified": "2023-07-03T20:38:42.709Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c0c1357d-f687-43c6-a25e-bbb673d92cde",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "b688851e-a8e8-461f-99c0-7147907d0526",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos/3",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-07-03T16:32:07.866Z",
+            "modified": "2023-07-03T16:33:40.754Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b49380a8-2e67-4537-85a0-4982b0bd3c47",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "85d791d4-c95a-4704-a284-b28a6bf4a7b2",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos/3",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-07-03T20:38:42.711Z",
+            "modified": "2023-07-03T20:39:59.132Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "45e4e504-78b1-44e8-bb06-543f59a6c81e",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "b688851e-a8e8-461f-99c0-7147907d0526",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos/3",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-07-03T16:32:50.003Z",
+            "modified": "2023-07-03T16:33:22.658Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\" : \"Programação em Go\",\n  \"aulas\" : 60,\n  \"horas\" : 31\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "934bc20e-c340-45cf-a4e1-6e3ecd836680",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "85d791d4-c95a-4704-a284-b28a6bf4a7b2",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos/3",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-07-03T20:38:42.712Z",
+            "modified": "2023-07-03T20:38:42.709Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\" : \"Programação em Go\",\n  \"aulas\" : 60,\n  \"horas\" : 31\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "285204fe-b6f6-4ebd-86e5-5911272bbac0",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "4e08b6eb-eead-49e9-860b-66205e705fd1",
+            "name": "Artigo",
+            "url": "http://localhost:8000/api/v1/artigos",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-07-04T01:56:34.760Z",
+            "modified": "2023-07-04T02:01:40.931Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\" : \"Segundo Artigo\",\n  \"descricao\" : \"Somente mais um artigo\",\n  \"url_fonte\" : \"https://www.udemy.com\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNjg5MDQwMTAzLCJpYXQiOjE2ODg0MzUzMDMsInN1YiI6IjEifQ.h1x_FVhS8ZDExKPKkLn9FzVdqg369c87KCEraG9PiXo"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9b7e2f0a-2460-4581-aebe-801620c7b693",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "b688851e-a8e8-461f-99c0-7147907d0526",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos/3",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-07-03T16:33:52.950Z",
+            "modified": "2023-07-03T16:34:07.066Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "88299660-9a99-4c86-a8a8-fe840b23a1e1",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "85d791d4-c95a-4704-a284-b28a6bf4a7b2",
+            "name": "Curso",
+            "url": "http://localhost:8000/api/v1/cursos/3",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-07-03T20:38:42.713Z",
+            "modified": "2023-07-03T20:38:42.709Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dcc3d4f5-626a-4887-ad71-f28d94ad3ee4",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "4e08b6eb-eead-49e9-860b-66205e705fd1",
+            "name": "Artigos",
+            "url": "http://localhost:8000/api/v1/artigos",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-07-04T02:03:45.133Z",
+            "modified": "2023-07-04T02:04:18.420Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c4cef29a-e15a-4fb3-9343-1cfa1bf32260",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "4e08b6eb-eead-49e9-860b-66205e705fd1",
+            "name": "Artigo",
+            "url": "http://localhost:8000/api/v1/artigos/2",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-07-04T02:06:15.431Z",
+            "modified": "2023-07-04T02:06:26.469Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1df42bc4-359c-4317-a709-1c833f131804",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "4e08b6eb-eead-49e9-860b-66205e705fd1",
+            "name": "Artigo",
+            "url": "http://localhost:8000/api/v1/artigos/2",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-07-04T02:06:34.490Z",
+            "modified": "2023-07-04T02:12:19.979Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\" : \"Novo Artigo v3\",\n  \"descricao\": \"Um novo artigo v3\",\n  \"url_fonte\" : \"https://www.googlenews.com\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNjg5MDQxNDI3LCJpYXQiOjE2ODg0MzY2MjcsInN1YiI6IjIifQ.GD__t7AIWl23K7zRv3bytux_u1-UwV0Eb4hb4tkzEKY"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8cb24dfb-615c-4c31-96e8-3d353cfa65db",
+            "colId": "39c4d9e9-bc84-4640-9a68-06a4efa29e53",
+            "containerId": "4e08b6eb-eead-49e9-860b-66205e705fd1",
+            "name": "Artigo",
+            "url": "http://localhost:8000/api/v1/artigos/2",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2023-07-04T02:09:24.133Z",
+            "modified": "2023-07-04T02:12:30.129Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNjg5MDQxNDI3LCJpYXQiOjE2ODg0MzY2MjcsInN1YiI6IjIifQ.GD__t7AIWl23K7zRv3bytux_u1-UwV0Eb4hb4tkzEKY"
+            },
+            "tests": []
+        }
+    ]
+}

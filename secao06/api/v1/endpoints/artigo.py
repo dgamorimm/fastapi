@@ -19,7 +19,7 @@ async def post_artigo(artigo: ArtigoSchema, db: AsyncSession = Depends(get_sessi
         titulo=artigo.titulo,
         descricao=artigo.descricao,
         url_fonte=artigo.url_fonte,
-        autor=usuario_logado.id
+        usuario_id=usuario_logado.id
     )
     
     db.add(novo_artigo)

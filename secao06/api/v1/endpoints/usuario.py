@@ -6,6 +6,7 @@ from fastapi.responses import JSONResponse
 
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
+from sqlalchemy.exc import IntegrityError
 
 from models.usuario_model import UsuarioModel
 from schemas.usuario_schema import UsuarioSchemaBase, UsuarioSchemaCreate, UsuarioSchemaUp, UsuarioSchemaArtigos
@@ -34,9 +35,15 @@ async def post_usuario(usuario: UsuarioSchemaCreate, db:AsyncSession = Depends(g
         is_admin=usuario.is_admin
     )
     async with db as session:
-        session.add(novo_usuario)
-        await session.commit()
-        return novo_usuario
+        try:
+            session.add(novo_usuario)
+            await session.commit()
+            return novo_usuario
+        except IntegrityError:
+            raise HTTPException(
+                            status_code=status.HTTP_406_NOT_ACCEPTABLE,
+                            detail="Já existe esse email cadastrado"
+                        )
 
 # GET Usuarios
 
